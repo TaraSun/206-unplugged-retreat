@@ -106,6 +106,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   text-align: left;
+  color: #e2e3ed;
 }
 
 ul,
@@ -120,23 +121,27 @@ a {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+  font-weight: 500;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
 }
 
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
+  font-weight: 500;
 }
 
 p {
   font-size: 0.875em;
-  line-height: 1.4;
+  line-height: 1.285;
 }
 
 img {
@@ -154,7 +159,7 @@ address {
 
 .content-wrapper {
      width: 90%;
-     margin: 50px 0;
+     margin: 10px 0;
 }
 
 
@@ -166,6 +171,7 @@ address {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background: #202322;
    }
 
    header {
@@ -180,10 +186,15 @@ address {
      margin: 0;
    }
 
+  header h2 {
+    text-transform: uppercase;
+    display: inline;
+  }
+
    .header-divider {
      width: 100%;
      height: 1px;
-     margin: 10px 0 20px 0;
+     margin: 10px 0 10px 0;
    }
 
    header nav {
@@ -198,10 +209,13 @@ address {
      display: flex;
      justify-content: space-around;
      width: 100%;
+     padding-inline-start: 0;
+     text-transform: uppercase;
    }
 
    footer {
      flex-direction: column;
+     text-align: center;
    }
 
    footer p {
@@ -210,7 +224,7 @@ address {
 
    footer .content-wrapper {
      width: 55%;
-     margin: 50px 0;
+     margin: 20px 0 30px 0;
    }
 
    footer .contact {
@@ -231,6 +245,7 @@ address {
 
    footer .copyright {
      margin: 20px 0;
+     text-align: center;
    }
 
    /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -245,12 +260,39 @@ address {
 
    /* Aside */
 
-   aside {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
-   }
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background: #527158;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #bdbec5;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
    /* Features */
 
@@ -278,6 +320,7 @@ address {
 
    .features p {
      margin: 0;
+     text-align: center;
    }
 
    /* Reviews */
@@ -286,6 +329,7 @@ address {
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
+     background: #2a423a;
    }
 
    .reviews h2 {
@@ -306,6 +350,7 @@ address {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background: #527158;
    }
 
    .contact-section {
@@ -313,8 +358,13 @@ address {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background: #2a423a;
+     padding-bottom: 30px;
    }
 
+   .contact-section h4 {
+     margin-bottom: 10px;
+   }
    .contact-content p {
      margin: 0;
    }
@@ -328,10 +378,11 @@ address {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background: #527158;
    }
 
    .faq .content-wrapper {
-     margin: 50px 0 0 0;
+     margin: 20px 0 0 0;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -438,9 +489,13 @@ address {
     /*Tablet styles here*/
 
       /* General styles */
+      body {
+        font-size: 1.125em;
+      }
+
       .content-wrapper {
         max-width: 640px;
-        margin: 100px 0;
+        margin: 50px 0;
       }
 
       /* Header */
@@ -482,6 +537,10 @@ address {
       }
 
       /* Features */
+      .features h2 {
+        text-align: center;
+      }
+
       .features article {
         display: flex;
         justify-content: center;
@@ -535,6 +594,10 @@ address {
         padding-top: 20px
       }
 
+      .mission h2,
+      .contact-section h2 {
+        margin-bottom: 10px;
+      }
       .mission-content p {
         width: 45%;
       }
@@ -572,6 +635,10 @@ address {
 /*-- Desktop Styles --*/
 
   /* General Styles */
+  body {
+    font-size: 1.25em;
+  }
+
   .content-wrapper {
     max-width: 960px;
   }
@@ -589,6 +656,7 @@ address {
   /* Aside */
   aside .content-wrapper {
     justify-content: space-between;
+    width: 60%;
   }
 
   aside .content-wrapper .form-description,
