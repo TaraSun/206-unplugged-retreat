@@ -122,7 +122,7 @@ a {
 
 h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.25em;
+  font-size: 2em;
   font-weight: 500;
 }
 
@@ -145,11 +145,11 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -184,6 +184,10 @@ address {
      align-items: center;
      flex-flow: row wrap;
      margin: 0;
+   }
+
+   header figure {
+     width: 70%;
    }
 
    .header-divider {
@@ -251,8 +255,13 @@ address {
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
+     background: url('../img/hero.jpg') center no-repeat #1a2c2a;
+     background-size: cover;
    }
 
+   .hero-area .content-wrapper {
+     margin-bottom: 210px;
+   }
    /* Aside */
 
 aside {
@@ -295,6 +304,8 @@ input[type=button] {
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
+     background: url('../img/features-bkgd.jpg') center no-repeat #1a2c2a;
+     background-size: cover;
    }
 
    .features h2 {
@@ -504,6 +515,9 @@ input[type=button] {
         justify-content: space-between;
       }
 
+      header figure {
+        width: 40%;
+      }
       header nav {
         width: 20%;
       }
@@ -554,8 +568,25 @@ input[type=button] {
         justify-content: space-between;
       }
 
+      .reviews figure {
+        width: 49%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+      }
+
       .reviews article div {
         width: 49%;
+      }
+
+      .reviews h3 {
+        width: 100%;
+        margin-top: 0;
+      }
+
+      .reviews p{
+        font-size: 0.75em;
       }
 
       /* Footer */
@@ -636,6 +667,7 @@ input[type=button] {
 
   .content-wrapper {
     max-width: 960px;
+    margin-top: 20px;
   }
 
   /* Header */
@@ -643,9 +675,18 @@ input[type=button] {
     padding: 45px 0;
   }
 
+  header figure {
+    width: 30%;
+  }
+
   /* Hero Area */
+  .hero-area {
+    padding-bottom: 220px;
+  }
+
   .hero-area h1 {
-    width: 50%;
+    width: 70%;
+    font-size: 3em;
   }
 
   /* Aside */
@@ -669,10 +710,13 @@ input[type=button] {
   }
 
   /* Reviews */
-  .reviews article div {
-        width: 42%;
-    }
+.reviews h3 {
+  font-size: 1.375em;
+}
 
+.reviews p {
+  font-size: 0.9em;
+}
   /* Footer */
 
 
