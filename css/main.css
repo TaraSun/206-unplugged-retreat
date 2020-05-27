@@ -230,6 +230,10 @@ address {
      margin-bottom: 50px;
    }
 
+   footer .contact p {
+     line-height: 1.8;
+   }
+
    footer .social-icons {
      display: flex;
      justify-content: space-around;
@@ -367,6 +371,10 @@ input[type=button] {
      align-items: center;
      flex-flow: row wrap;
      background: #527158;
+   }
+
+   .mission h2 {
+     font-size: 1.75em;
    }
 
 .map figure {
@@ -567,7 +575,7 @@ input[type=button] {
 
       aside .content-wrapper .form-description,
       aside .content-wrapper .form {
-        width: 40%;
+        width: 45%;
         margin: 0;
       }
 
@@ -727,7 +735,7 @@ input[type=button] {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 30%;
+    width: 40%;
   }
 
   /* Features */
