@@ -242,6 +242,12 @@ address {
      align-items: center;
    }
 
+   footer .social-icons i {
+     font-size: 3em;
+     color: #527158;
+     margin: 0 25px;
+   }
+
    footer .copyright {
      margin: 20px 0;
      text-align: center;
